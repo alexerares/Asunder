@@ -8,11 +8,14 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 20;
     public bool isGrounded = false;
     public float JumpForce = 20;
+    public Animator animator;
 
     private Rigidbody2D _rigidbody;
     float translate = 0;
 
     bool facingRight;
+
+    int i = 0;
 
     void Start()
     {
@@ -54,6 +57,32 @@ public class PlayerMovement : MonoBehaviour
             _rigidbody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
         }
         
+        if(i < 1)
+        {
+            animator.SetBool("Coll_Sparky", false);
+        }
+        i--;
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "BoxSparky")
+        {
+            Destroy(collision.collider.gameObject);
+            animator.SetBool("Coll_Sparky", true);
+            i = 500;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "BoxSparky")
+        {
+            Instantiate(collision.collider.gameObject);
+            animator.SetBool("Coll_Sparky", false);
+        }
+
+    }
+
 
 }

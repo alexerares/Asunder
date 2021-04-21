@@ -64,11 +64,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AnimationTeleport1.cs" />
     <Compile Include="Assets\Back.cs" />
+    <Compile Include="Assets\BeginTp.cs" />
+    <Compile Include="Assets\BoxS.cs" />
     <Compile Include="Assets\Grounded.cs" />
+    <Compile Include="Assets\Interacteble.cs" />
     <Compile Include="Assets\MainMenu.cs" />
     <Compile Include="Assets\MovementShady.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
+    <Compile Include="Assets\TeleportKey.cs" />
+    <Compile Include="Assets\Teleportation.cs" />
     <Compile Include="Assets\movement.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

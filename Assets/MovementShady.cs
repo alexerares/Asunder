@@ -61,13 +61,20 @@ public class MovementShady : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Coin")
+        if(collision.gameObject.tag == "Coin" || collision.gameObject.tag == "BoxShady")
             animator.SetBool("HitCoin", true);
+
+        if (collision.gameObject.tag == "BoxShady")
+            collision.collider.gameObject.GetComponent<Rigidbody2D>().mass = 2.5f;
+
     }
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Coin")
+        if (collision.gameObject.tag == "Coin" || collision.gameObject.tag == "BoxShady")
             animator.SetBool("HitCoin", false);
+
+        if (collision.gameObject.tag == "BoxShady")
+            collision.collider.gameObject.GetComponent<Rigidbody2D>().mass = 1000;
     }
 }

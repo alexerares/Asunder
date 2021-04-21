@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Coin
   - Ground
+  - BoxSparky
+  - BoxShady
+  - BoxS
+  - Sparky
+  - Shady
+  - Portal
   layers:
   - Default
   - TransparentFX
@@ -15,8 +21,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Sparky
+  - BoxPasseble
   - 
   - 
   - 
