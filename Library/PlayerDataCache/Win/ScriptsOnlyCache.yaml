@@ -6,7 +6,9 @@ ScriptsOnlyBuild:
     - BeginTp
     - MainMenu
     - MovementShady
+    - MusicPlayer
     - PlayerMovement
+    - Resolution
     - TeleportKey
     - Teleportation
     Unity.2D.Animation.Editor.dll:
@@ -44,6 +46,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.Slider
+    - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/Level1.unity:
     - Class: 1
@@ -97,13 +100,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13784}
     - Class: 114
-      Script: {instanceID: 14208}
+      Script: {instanceID: 14210}
     - Class: 114
-      Script: {instanceID: 14234}
+      Script: {instanceID: 14404}
     - Class: 114
-      Script: {instanceID: 14400}
-    - Class: 114
-      Script: {instanceID: 14416}
+      Script: {instanceID: 14420}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -156,9 +157,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13784}
     - Class: 114
-      Script: {instanceID: 14234}
+      Script: {instanceID: 14236}
     - Class: 114
-      Script: {instanceID: 14400}
+      Script: {instanceID: 14404}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -209,9 +210,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13784}
     - Class: 114
-      Script: {instanceID: 14234}
+      Script: {instanceID: 14236}
     - Class: 114
-      Script: {instanceID: 14400}
+      Script: {instanceID: 14404}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -262,9 +263,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13784}
     - Class: 114
-      Script: {instanceID: 14234}
+      Script: {instanceID: 14236}
     - Class: 114
-      Script: {instanceID: 14400}
+      Script: {instanceID: 14404}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -298,10 +299,16 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 11292}
+    - Class: 114
+      Script: {instanceID: 11584}
     - Class: 114
       Script: {instanceID: 11638}
     - Class: 114
@@ -321,13 +328,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13784}
     - Class: 114
-      Script: {instanceID: 14064}
+      Script: {instanceID: 14036}
     - Class: 114
-      Script: {instanceID: 14234}
+      Script: {instanceID: 14066}
     - Class: 114
-      Script: {instanceID: 14400}
+      Script: {instanceID: 14236}
     - Class: 114
-      Script: {instanceID: 14444}
+      Script: {instanceID: 14392}
+    - Class: 114
+      Script: {instanceID: 14404}
+    - Class: 114
+      Script: {instanceID: 14448}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -335,6 +346,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -365,7 +378,7 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 2efe836c44a4d7e097064e1007d31cef
+      Hash: 3d0d23cb91ca4466a020a197f0e3f0ff
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -563,7 +576,7 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: fd90c44e6aabc8b0ead673841abff56f
+      Hash: f023fc2a11a719669677a30cfc707e87
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MovementShady
@@ -791,6 +804,12 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: ec4321d3aef5e99ce125679f044c9775
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Resolution
+  - hash:
+      serializedVersion: 2
       Hash: d791aa6007fa3640be1164ea75bb087d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -861,6 +880,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 72c43083ccb1861667119ee71277f0fe
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MusicPlayer
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
