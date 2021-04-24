@@ -5,9 +5,10 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float moveSpeed = 20;
+    public float moveSpeed = 7;
+    public float JumpForce = 7;
+
     public bool isGrounded = false;
-    public float JumpForce = 20;
     public Animator animator;
 
     private Rigidbody2D _rigidbody;
@@ -46,11 +47,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (!facingRight)
         {
-            transform.Translate(Vector3.right * -translate * 20 * Time.deltaTime);
+            transform.Translate(Vector3.right * -translate * moveSpeed * Time.deltaTime);
         }
         else
         {
-            transform.Translate(Vector3.right * translate * 20 * Time.deltaTime);
+            transform.Translate(Vector3.right * translate * moveSpeed * Time.deltaTime);
         }
         if (Input.GetKeyDown(KeyCode.W) && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
         {
