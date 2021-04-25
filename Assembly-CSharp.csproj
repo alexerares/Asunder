@@ -55,6 +55,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Button.cs" />
+     <Compile Include="Assets\Platform.cs" />
+     <Compile Include="Assets\PlatformaConstanta.cs" />
      <Compile Include="Assets\Scripts\AnimationTeleport1.cs" />
      <Compile Include="Assets\Scripts\Back.cs" />
      <Compile Include="Assets\Scripts\BeginTp.cs" />
@@ -69,6 +72,7 @@
      <Compile Include="Assets\Scripts\TeleportKey.cs" />
      <Compile Include="Assets\Scripts\Teleportation.cs" />
      <Compile Include="Assets\Scripts\movement.cs" />
+     <Compile Include="Assets\WInLevel.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
