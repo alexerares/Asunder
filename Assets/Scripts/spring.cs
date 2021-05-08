@@ -8,6 +8,9 @@ public class spring : MonoBehaviour
     public float moveSpeed = 10f;
     public float jumpSpeed = 1000;
     public Animator animator;
+    public bool has_velocity = false;
+    public bool reset = false;
+    public GameObject shady;
 
     void Start()
     {
@@ -17,7 +20,14 @@ public class spring : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (has_velocity)
+        {
+            shady.GetComponent<Rigidbody2D>().velocity = new Vector3(0, 20, 0);
+        }
+        if (reset)
+        {
+            animator.SetBool("Jump", false);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -25,7 +35,6 @@ public class spring : MonoBehaviour
         if (collision.collider.tag == "Shady")
         {
             animator.SetBool("Jump", true);
-            collision.collider.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector3(0, 35, 0);
         }
     }
 
