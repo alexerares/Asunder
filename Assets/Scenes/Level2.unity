@@ -250,7 +250,7 @@ Transform:
   m_LocalScale: {x: 1, y: 0.99124897, z: 1}
   m_Children: []
   m_Father: {fileID: 184492473}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &135655668
 Rigidbody2D:
@@ -2036,7 +2036,7 @@ Transform:
   m_LocalScale: {x: 1, y: 0.99124897, z: 1}
   m_Children: []
   m_Father: {fileID: 184492473}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &615048064
 Rigidbody2D:
@@ -3719,12 +3719,12 @@ PrefabInstance:
     - target: {fileID: 3727731008505520569, guid: 6a7c812ba62243644b5fe9975b7f86a7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.72
+      value: 9.95
       objectReference: {fileID: 0}
     - target: {fileID: 3727731008505520569, guid: 6a7c812ba62243644b5fe9975b7f86a7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.22
+      value: -8.56
       objectReference: {fileID: 0}
     - target: {fileID: 3727731008505520569, guid: 6a7c812ba62243644b5fe9975b7f86a7,
         type: 3}
@@ -6171,6 +6171,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: light_bulb_with_platform
       objectReference: {fileID: 0}
+    - target: {fileID: 6876311176570087230, guid: 8f0fb5c6a6c94604d82bf0797cbbf0e8,
+        type: 3}
+      propertyPath: matching_platform
+      value: 
+      objectReference: {fileID: 1123962257}
     - target: {fileID: 6876311176570087231, guid: 8f0fb5c6a6c94604d82bf0797cbbf0e8,
         type: 3}
       propertyPath: m_RootOrder

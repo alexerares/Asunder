@@ -6,6 +6,7 @@ public class ControlBulb : MonoBehaviour
 {
     public bool isOpen = false;
     public Animator animator;
+    public Platform matching_platform = null;
 
     public void OpenChest()
     {
@@ -13,6 +14,7 @@ public class ControlBulb : MonoBehaviour
         {
             isOpen = true;
             animator.SetBool("isOpen", isOpen);
+            matching_platform.button = true;
         }
     }
 
@@ -22,6 +24,7 @@ public class ControlBulb : MonoBehaviour
         {
             isOpen = false;
             animator.SetBool("isOpen", isOpen);
+            matching_platform.button = false;
         }
     }
 }
