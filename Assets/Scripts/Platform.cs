@@ -7,7 +7,7 @@ public class Platform : MonoBehaviour
     public Transform pos1, pos2;
     public float speed = 2;
     public Transform startPos;
-    public static bool button = false;
+    public bool button = false;
     public bool first = false;
 
     Vector3 nextpos;

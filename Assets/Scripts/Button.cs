@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Button : MonoBehaviour
 {
+    public Platform matching_platform;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,12 +21,12 @@ public class Button : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.tag == "BoxShady")
-            Platform.button = true;
+            matching_platform.button = true;
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.collider.tag == "BoxShady")
-            Platform.button = false;
+            matching_platform.button = false;
     }
 }
