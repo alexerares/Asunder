@@ -35,6 +35,7 @@ public class Teleportation : MonoBehaviour
         {
             Teleportation.StartTeleporterSh = 0;
             animator.SetBool("TeleportOn", true);
+            portal.GetComponent<Animator>().SetBool("TeleportOn", true);
             Teleportation.anim = 1;
             StartCoroutine(Teleport());
             StartCoroutine(Teleport21());
@@ -45,6 +46,7 @@ public class Teleportation : MonoBehaviour
         {
             Teleportation.StartTeleporterSp = 0;
             animator.SetBool("TeleportOn", true);
+            portal.GetComponent<Animator>().SetBool("TeleportOn", true);
             Teleportation.anim = 1;
             StartCoroutine(Teleport2());
             StartCoroutine(Teleport1());
@@ -59,6 +61,7 @@ public class Teleportation : MonoBehaviour
         yield return new WaitForSeconds(3);
         player.transform.position = new Vector2(portal.transform.position.x, portal.transform.position.y);
         animator.SetBool("TeleportOn", false);
+        portal.GetComponent<Animator>().SetBool("TeleportOn", false);
         Teleportation.anim = 0;
     }
 
@@ -73,6 +76,7 @@ public class Teleportation : MonoBehaviour
         yield return new WaitForSeconds(3);
         player2.transform.position = new Vector2(portal.transform.position.x, portal.transform.position.y);
         animator.SetBool("TeleportOn", false);
+        portal.GetComponent<Animator>().SetBool("TeleportOn", false);
         Teleportation.anim = 0;
     }
 
