@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 7;
     public float JumpForce = 7;
 
+    public bool canMove = true;
     public bool isGrounded = false;
     public Animator animator;
 
@@ -47,11 +48,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (!facingRight)
         {
-            transform.Translate(Vector3.right * -translate * moveSpeed * Time.deltaTime);
+            if(canMove)
+                transform.Translate(Vector3.right * -translate * moveSpeed * Time.deltaTime);
         }
         else
         {
-            transform.Translate(Vector3.right * translate * moveSpeed * Time.deltaTime);
+            if(canMove)
+                transform.Translate(Vector3.right * translate * moveSpeed * Time.deltaTime);
         }
         if (Input.GetKeyDown(KeyCode.W) && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
         {

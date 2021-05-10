@@ -920,6 +920,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1935628629}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &467586511 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5121178061447670107, guid: 60a19a83b78eea643b459a7c096c0c32,
+    type: 3}
+  m_PrefabInstance: {fileID: 5121178060721980785}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &467586512
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467586511}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b19d8bbaf855b684d9424b3831dcbb9a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &497785182 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1357723331578320501, guid: 464acd4b47dbe654bbb9d8c4780a52e4,
@@ -2004,7 +2029,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 5121178061447670111, guid: 60a19a83b78eea643b459a7c096c0c32, type: 3}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 60a19a83b78eea643b459a7c096c0c32, type: 3}
 --- !u!4 &753531162 stripped
 Transform:
@@ -4252,7 +4277,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 5121178061447670111, guid: 60a19a83b78eea643b459a7c096c0c32, type: 3}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 60a19a83b78eea643b459a7c096c0c32, type: 3}
 --- !u!1001 &1356833375
 PrefabInstance:
@@ -8198,8 +8223,7 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5121178061447670111, guid: 60a19a83b78eea643b459a7c096c0c32, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60a19a83b78eea643b459a7c096c0c32, type: 3}
 --- !u!1001 &5810394052306487789
 PrefabInstance:

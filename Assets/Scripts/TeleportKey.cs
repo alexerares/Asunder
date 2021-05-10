@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class TeleportKey : MonoBehaviour
 {
+    public bool turnontele = false;
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Shady")
+        if(collision.tag == "Shady" || collision.tag == "Sparky")
         {
-            Teleportation.StartTeleporterSh = 1;
-        }
-        if (collision.tag == "Sparky")
-        {
-            Teleportation.StartTeleporterSp = 1;
+            turnontele = true;
         }
     }
+
 }

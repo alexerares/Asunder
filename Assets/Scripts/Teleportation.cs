@@ -30,6 +30,16 @@ public class Teleportation : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        if(Teleportation.on == 1)
+        {
+            animator.SetBool("OnTp", true);
+            portal.GetComponent<Animator>().SetBool("OnTp", true);
+        }
+        else
+        {
+            animator.SetBool("OnTp", false);
+            portal.GetComponent<Animator>().SetBool("OnTp", false);
+        }
 
         if(collision.gameObject.tag == "Shady" && Teleportation.StartTeleporterSh == 1 && Teleportation.on == 1)
         {

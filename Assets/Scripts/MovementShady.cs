@@ -8,6 +8,7 @@ public class MovementShady : MonoBehaviour
     public float JumpForce2 = 7;
     public float moveSpeed2 = 7;
     public Animator animator;
+    public bool canMove = true;
 
     GameObject shady;
 
@@ -46,11 +47,13 @@ public class MovementShady : MonoBehaviour
 
         if (!facingRight2)
         {
-            transform.Translate(Vector3.right * -translate2 * moveSpeed2 * Time.deltaTime);
+            if(canMove)
+                transform.Translate(Vector3.right * -translate2 * moveSpeed2 * Time.deltaTime);
         }
         else
         {
-            transform.Translate(Vector3.right * translate2 * moveSpeed2 * Time.deltaTime);
+            if (canMove)
+                transform.Translate(Vector3.right * translate2 * moveSpeed2 * Time.deltaTime);
         }
         if (Input.GetKeyDown(KeyCode.UpArrow) && Mathf.Abs(_rigidbody2.velocity.y) < 0.001f)
         {
