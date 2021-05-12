@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6876311176570087230}
   - component: {fileID: 6876311176570087229}
   m_Layer: 0
-  m_Name: light_bulb_with_platform
+  m_Name: light_bulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6876311176570087216}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.53, y: -8.95, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6876311176805715607}
@@ -98,6 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isOpen: 0
   animator: {fileID: 6876311176570087229}
+  matching_platform: {fileID: 0}
 --- !u!95 &6876311176570087229
 Animator:
   serializedVersion: 3
