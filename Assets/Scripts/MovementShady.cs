@@ -16,6 +16,7 @@ public class MovementShady : MonoBehaviour
     float translate2 = 0;
 
     bool facingRight2;
+    float mass;
 
     void Start()
     {
@@ -68,8 +69,9 @@ public class MovementShady : MonoBehaviour
             animator.SetBool("HitCoin", true);
 
         if (collision.gameObject.tag == "BoxShady")
+        {
             collision.collider.gameObject.GetComponent<Rigidbody2D>().mass = 2.5f;
-
+        }
     }
 
     void OnCollisionExit2D(Collision2D collision)
