@@ -61,54 +61,38 @@ public class PlayerMovement : MonoBehaviour
             _rigidbody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
         }
         
-        if(i < 1)
-        {
-            animator.SetBool("Coll_Sparky", false);
-        }
-        i--;
 
         if(this.GetComponent<Rigidbody2D>().velocity.y > 0)
         {
-            //animator.SetBool("SparkyJump", true);
+            animator.SetBool("SparkyJump", true);
         }
         else if(this.GetComponent<Rigidbody2D>().velocity.y < 0)
         {
-                //animator.SetBool("SparkyFall", true);
+                animator.SetBool("SparkyFall", true);
         }
         else
         {
-            //animator.SetBool("SparkyJump", false);
-           // animator.SetBool("SparkyFall", false);
+            animator.SetBool("SparkyJump", false);
+            animator.SetBool("SparkyFall", false);
         }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "BoxSparky")
-        {
-            Destroy(collision.collider.gameObject);
-            animator.SetBool("Coll_Sparky", true);
-            i = 500;
-        }
 
-        if (collision.gameObject.tag == "Floor")
+        /*if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "BoxShady")
         {
             animator.SetBool("SparkyJump", false);
-        }
+        }*/
     }
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "BoxSparky")
-        {
-            Instantiate(collision.collider.gameObject);
-            animator.SetBool("Coll_Sparky", false);
-        }
 
-        if (collision.gameObject.tag == "Floor")
+        /*if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "BoxShady")
         {
             animator.SetBool("SparkyJump", true);
-        }
+        }*/
 
     }
 
