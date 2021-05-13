@@ -4,8 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class WInLevel : MonoBehaviour
 {
-    bool Sparky = false;
-    bool Shady = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,16 +13,15 @@ public class WInLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Sparky && Shady)
+        if (transform.GetChild(0).GetComponent<Elevator_exit>().shady && transform.GetChild(1).GetComponent<pipe_exit>().sparky)
+        {
+            transform.GetChild(0).GetComponent<Elevator_exit>().animator.SetBool("win", true);
+            transform.GetChild(1).transform.GetChild(2).GetComponent<Jesus>().animator.SetBool("Jesus", true);
+            //SceneManager.LoadScene(2);
+        }
+
+        if(transform.GetChild(0).GetComponent<Elevator_exit>().nextlevel)
             SceneManager.LoadScene(2);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.tag == "Sparky")
-            Sparky = true;
-
-        if (collision.collider.tag == "Shady")
-            Shady = true;
-    }
 }
