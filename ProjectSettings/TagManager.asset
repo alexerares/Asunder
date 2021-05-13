@@ -12,6 +12,8 @@ TagManager:
   - Sparky
   - Shady
   - Portal
+  - Platform
+  - Floor
   layers:
   - Default
   - TransparentFX

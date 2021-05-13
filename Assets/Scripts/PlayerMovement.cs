@@ -66,6 +66,20 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("Coll_Sparky", false);
         }
         i--;
+
+        if(this.GetComponent<Rigidbody2D>().velocity.y > 0)
+        {
+            //animator.SetBool("SparkyJump", true);
+        }
+        else if(this.GetComponent<Rigidbody2D>().velocity.y < 0)
+        {
+                //animator.SetBool("SparkyFall", true);
+        }
+        else
+        {
+            //animator.SetBool("SparkyJump", false);
+           // animator.SetBool("SparkyFall", false);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -76,6 +90,11 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("Coll_Sparky", true);
             i = 500;
         }
+
+        if (collision.gameObject.tag == "Floor")
+        {
+            animator.SetBool("SparkyJump", false);
+        }
     }
 
     void OnCollisionExit2D(Collision2D collision)
@@ -84,6 +103,11 @@ public class PlayerMovement : MonoBehaviour
         {
             Instantiate(collision.collider.gameObject);
             animator.SetBool("Coll_Sparky", false);
+        }
+
+        if (collision.gameObject.tag == "Floor")
+        {
+            animator.SetBool("SparkyJump", true);
         }
 
     }
