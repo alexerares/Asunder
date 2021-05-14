@@ -72,6 +72,11 @@ public class MovementShady : MonoBehaviour
         {
             collision.collider.gameObject.GetComponent<Rigidbody2D>().mass = 2.5f;
         }
+
+        if(collision.collider.tag == "Platform")
+        {
+            transform.SetParent(collision.collider.transform);
+        }
     }
 
     void OnCollisionExit2D(Collision2D collision)
@@ -81,5 +86,10 @@ public class MovementShady : MonoBehaviour
 
         if (collision.gameObject.tag == "BoxShady")
             collision.collider.gameObject.GetComponent<Rigidbody2D>().mass = 1000;
+
+        if (collision.collider.tag == "Platform")
+        {
+            transform.SetParent(null);
+        }
     }
 }

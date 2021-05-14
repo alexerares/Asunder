@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Button : MonoBehaviour
+public class boxshady : MonoBehaviour
 {
-    public Platform matching_platform;
-    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,19 +18,17 @@ public class Button : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.tag == "BoxShady")
+        if (collision.collider.tag == "Platform")
         {
-            matching_platform.button = true;
-            animator.SetBool("Pressed", true);
+            transform.SetParent(collision.collider.transform);
         }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.collider.tag == "BoxShady")
+        if (collision.collider.tag == "Platform")
         {
-            matching_platform.button = false;
-            animator.SetBool("Pressed", false);
+            transform.SetParent(null);
         }
     }
 }

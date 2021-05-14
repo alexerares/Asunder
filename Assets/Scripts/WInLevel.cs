@@ -17,11 +17,10 @@ public class WInLevel : MonoBehaviour
         {
             transform.GetChild(0).GetComponent<Elevator_exit>().animator.SetBool("win", true);
             transform.GetChild(1).transform.GetChild(2).GetComponent<Jesus>().animator.SetBool("Jesus", true);
-            //SceneManager.LoadScene(2);
         }
 
         if(transform.GetChild(0).GetComponent<Elevator_exit>().nextlevel)
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
 
 }

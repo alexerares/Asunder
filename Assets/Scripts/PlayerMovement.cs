@@ -84,6 +84,10 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("SparkyJump", false);
         }*/
+        if (collision.collider.tag == "Platform")
+        {
+            transform.SetParent(collision.collider.transform);
+        }
     }
 
     void OnCollisionExit2D(Collision2D collision)
@@ -93,6 +97,10 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("SparkyJump", true);
         }*/
+        if (collision.collider.tag == "Platform")
+        {
+            transform.SetParent(null);
+        }
 
     }
 
