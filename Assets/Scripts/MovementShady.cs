@@ -17,7 +17,7 @@ public class MovementShady : MonoBehaviour
 
     bool facingRight2;
     float mass;
-
+    int soundBoxShady = 0;
     void Start()
     {
         _rigidbody2 = GetComponent<Rigidbody2D>();
@@ -30,6 +30,7 @@ public class MovementShady : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
         {
             translate2 = 0;
+            
         }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
@@ -37,6 +38,8 @@ public class MovementShady : MonoBehaviour
             transform.right = new Vector3(-1, 0, 0);
             facingRight2 = false;
             translate2 = -1;
+            if (soundBoxShady != 1)
+                SoundMangerScript.PlaySound("playerSound");
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -44,6 +47,8 @@ public class MovementShady : MonoBehaviour
             transform.right = new Vector3(1, 0, 0);
             facingRight2 = true;
             translate2 = 1;
+            if(soundBoxShady!=1)
+                SoundMangerScript.PlaySound("playerSound");
         }
 
         if (!facingRight2)
@@ -59,8 +64,8 @@ public class MovementShady : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow) && Mathf.Abs(_rigidbody2.velocity.y) < 0.001f)
         {
             _rigidbody2.AddForce(new Vector2(0, JumpForce2), ForceMode2D.Impulse);
+            SoundMangerScript.PlaySound("jumpShady");
         }
-
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -70,6 +75,8 @@ public class MovementShady : MonoBehaviour
 
         if (collision.gameObject.tag == "BoxShady")
         {
+            soundBoxShady = 1;
+            SoundMangerScript.PlaySound("pushBox");
             collision.collider.gameObject.GetComponent<Rigidbody2D>().mass = 2.5f;
         }
 
@@ -85,7 +92,10 @@ public class MovementShady : MonoBehaviour
             animator.SetBool("HitCoin", false);
 
         if (collision.gameObject.tag == "BoxShady")
+        {
+            soundBoxShady = 0;
             collision.collider.gameObject.GetComponent<Rigidbody2D>().mass = 1000;
+        }
 
         if (collision.collider.tag == "Platform")
         {

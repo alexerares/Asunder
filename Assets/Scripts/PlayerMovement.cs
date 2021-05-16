@@ -17,8 +17,6 @@ public class PlayerMovement : MonoBehaviour
 
     bool facingRight;
 
-    int i = 0;
-
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
