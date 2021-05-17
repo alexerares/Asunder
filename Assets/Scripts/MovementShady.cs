@@ -66,12 +66,30 @@ public class MovementShady : MonoBehaviour
             _rigidbody2.AddForce(new Vector2(0, JumpForce2), ForceMode2D.Impulse);
             SoundMangerScript.PlaySound("jumpShady");
         }
+
+        if (this.GetComponent<Rigidbody2D>().velocity.y > 0)
+        {
+            animator.SetBool("ShadyJump", true);
+        }
+        else if (this.GetComponent<Rigidbody2D>().velocity.y < 0)
+        {
+            animator.SetBool("ShadyFall", true);
+        }
+        else
+        {
+            animator.SetBool("ShadyJump", false);
+            animator.SetBool("ShadyFall", false);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "BoxShady")
-            animator.SetBool("HitCoin", true);
+        if (collision.gameObject.tag == "BoxShady")
+        {
+            animator.SetBool("ShadyPush", true);
+            animator.SetBool("ShadyJump", false);
+            animator.SetBool("ShadyFall", false);
+        }
 
         if (collision.gameObject.tag == "BoxShady")
         {
@@ -89,7 +107,22 @@ public class MovementShady : MonoBehaviour
     void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "BoxShady")
-            animator.SetBool("HitCoin", false);
+        {
+            animator.SetBool("ShadyPush", false);
+            if (this.GetComponent<Rigidbody2D>().velocity.y > 0)
+            {
+                animator.SetBool("ShadyJump", true);
+            }
+            else if (this.GetComponent<Rigidbody2D>().velocity.y < 0)
+            {
+                animator.SetBool("ShadyFall", true);
+            }
+            else
+            {
+                animator.SetBool("ShadyJump", false);
+                animator.SetBool("ShadyFall", false);
+            }
+        }
 
         if (collision.gameObject.tag == "BoxShady")
         {
