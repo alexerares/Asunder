@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Button : MonoBehaviour
+public class ButtonPlat : MonoBehaviour
 {
     public Platform matching_platform;
     public Animator animator;

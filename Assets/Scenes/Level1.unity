@@ -1571,6 +1571,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Activated_platform_button
       objectReference: {fileID: 0}
+    - target: {fileID: 4986824303104639548, guid: ed9e7576bba5148418a93ff3b50143cf,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4986824303104639548, guid: ed9e7576bba5148418a93ff3b50143cf,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 178029177
+      objectReference: {fileID: 0}
     - target: {fileID: 4986824303104639549, guid: ed9e7576bba5148418a93ff3b50143cf,
         type: 3}
       propertyPath: m_Size.x
@@ -8143,12 +8153,12 @@ PrefabInstance:
     - target: {fileID: 3727731008505520569, guid: 6a7c812ba62243644b5fe9975b7f86a7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.12
+      value: -17.04
       objectReference: {fileID: 0}
     - target: {fileID: 3727731008505520569, guid: 6a7c812ba62243644b5fe9975b7f86a7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.39
+      value: -9.18
       objectReference: {fileID: 0}
     - target: {fileID: 3727731008505520569, guid: 6a7c812ba62243644b5fe9975b7f86a7,
         type: 3}

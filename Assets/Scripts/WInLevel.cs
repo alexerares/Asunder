@@ -7,9 +7,10 @@ public class WInLevel : MonoBehaviour
     // Start is called before the first frame update
     public bool unlock1 = false;
     public bool unlock2 = false;
+    public int nextSceneLoad;
     void Start()
     {
-        
+        nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 1;
     }
 
     // Update is called once per frame
@@ -21,8 +22,24 @@ public class WInLevel : MonoBehaviour
             transform.GetChild(1).transform.GetChild(2).GetComponent<Jesus>().animator.SetBool("Jesus", true);
         }
 
-        if(transform.GetChild(0).GetComponent<Elevator_exit>().nextlevel)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+        if (transform.GetChild(0).GetComponent<Elevator_exit>().nextlevel)
+        {
+            if (SceneManager.GetActiveScene().buildIndex == 5) 
+            {
+                Debug.Log("You Completed ALL Levels");
+
+            }
+            else
+            {
+                SceneManager.LoadScene(nextSceneLoad);
+
+                if (nextSceneLoad > PlayerPrefs.GetInt("levelAt"))
+                {
+                    PlayerPrefs.SetInt("levelAt", nextSceneLoad);
+                }
+            }
+
+        }    
     }
 
 }
