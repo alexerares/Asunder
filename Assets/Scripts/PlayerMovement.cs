@@ -56,7 +56,9 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.W) && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
         {
+           
             _rigidbody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
+            SoundMangerScript.PlaySound("jumpSparky");
         }
         
 

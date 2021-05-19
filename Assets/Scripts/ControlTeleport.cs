@@ -54,6 +54,7 @@ public class ControlTeleport : MonoBehaviour
             transform.GetChild(1).GetComponent<InRangeOfTeleportation>().animator.SetBool("TeleportOn", true);
             player.gameObject.GetComponent<MovementShady>().canMove = false;
             player2.gameObject.GetComponent<PlayerMovement>().canMove = false;
+            SoundMangerScript.PlaySound("teleport");
             StartCoroutine(Teleport1());
         }
     }

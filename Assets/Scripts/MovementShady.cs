@@ -17,7 +17,7 @@ public class MovementShady : MonoBehaviour
 
     bool facingRight2;
     float mass;
-    int soundBoxShady = 0;
+
     void Start()
     {
         _rigidbody2 = GetComponent<Rigidbody2D>();
@@ -38,8 +38,6 @@ public class MovementShady : MonoBehaviour
             transform.right = new Vector3(-1, 0, 0);
             facingRight2 = false;
             translate2 = -1;
-            if (soundBoxShady != 1)
-                SoundMangerScript.PlaySound("playerSound");
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -47,8 +45,6 @@ public class MovementShady : MonoBehaviour
             transform.right = new Vector3(1, 0, 0);
             facingRight2 = true;
             translate2 = 1;
-            if(soundBoxShady!=1)
-                SoundMangerScript.PlaySound("playerSound");
         }
 
         if (!facingRight2)
@@ -93,8 +89,6 @@ public class MovementShady : MonoBehaviour
 
         if (collision.gameObject.tag == "BoxShady")
         {
-            soundBoxShady = 1;
-            SoundMangerScript.PlaySound("pushBox");
             collision.collider.gameObject.GetComponent<Rigidbody2D>().mass = 2.5f;
         }
 
@@ -126,7 +120,6 @@ public class MovementShady : MonoBehaviour
 
         if (collision.gameObject.tag == "BoxShady")
         {
-            soundBoxShady = 0;
             collision.collider.gameObject.GetComponent<Rigidbody2D>().mass = 1000;
         }
 

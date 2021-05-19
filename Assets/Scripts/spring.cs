@@ -34,6 +34,7 @@ public class spring : MonoBehaviour
     {
         if (collision.collider.tag == "Shady")
         {
+            SoundMangerScript.PlaySound("spring");
             animator.SetBool("Jump", true);
         }
     }

@@ -21,6 +21,7 @@ public class pipe_exit : MonoBehaviour
     {
         if(collision.tag == "Sparky")
         {
+            //SoundMangerScript.PlaySound("gasPipe");
             sparky = true;
         }   
     }

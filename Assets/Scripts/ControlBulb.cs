@@ -15,6 +15,7 @@ public class ControlBulb : MonoBehaviour
             isOpen = true;
             animator.SetBool("isOpen", isOpen);
             matching_platform.button = true;
+            SoundMangerScript.PlaySound("buttonPress");
         }
     }
 

@@ -22,6 +22,7 @@ public class ButtonPlat : MonoBehaviour
     {
         if (collision.collider.tag == "BoxShady")
         {
+            SoundMangerScript.PlaySound("buttonPress");
             matching_platform.button = true;
             animator.SetBool("Pressed", true);
         }

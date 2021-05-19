@@ -5,13 +5,16 @@ using UnityEngine;
 public class SoundMangerScript : MonoBehaviour
 {
     // Start is called before the first frame update
-    public static AudioClip playerSound, jumpShady, pushBox;
+    public static AudioClip jumpSparky, jumpShady, pushBox, gasPipe, spring, buttonPress, teleport;
     static AudioSource audioSrc;
     void Start()
     {
-        playerSound = Resources.Load<AudioClip>("mixkit-evil-dwarf-laugh-421");
-        jumpShady = Resources.Load<AudioClip>("look");
-        pushBox = Resources.Load<AudioClip>("this bithes can't even spell prague");
+        jumpSparky = Resources.Load<AudioClip>("JumpSparky");
+        jumpShady = Resources.Load<AudioClip>("JumpShady");
+        gasPipe = Resources.Load<AudioClip>("GasPipe");
+        spring = Resources.Load<AudioClip>("Spring");
+        buttonPress = Resources.Load<AudioClip>("ButtonPress");
+        teleport = Resources.Load<AudioClip>("Teleport");
         audioSrc = GetComponent<AudioSource>();
     }
 
@@ -24,14 +27,23 @@ public class SoundMangerScript : MonoBehaviour
     {
         switch (clip)
         {
-            case "playerSound":
-                audioSrc.PlayOneShot(playerSound);
+            case "jumpSparky":
+                audioSrc.PlayOneShot(jumpSparky);
                 break;
             case "jumpShady":
                 audioSrc.PlayOneShot(jumpShady);
                 break;
-            case "pushBox":
-                audioSrc.PlayOneShot(pushBox);
+            case "gasPipe":
+                audioSrc.PlayOneShot(gasPipe);
+                break;
+            case "spring":
+                audioSrc.PlayOneShot(spring);
+                break;
+            case "buttonPress":
+                audioSrc.PlayOneShot(buttonPress);
+                break;
+            case "teleport":
+                audioSrc.PlayOneShot(teleport);
                 break;
         }
     }

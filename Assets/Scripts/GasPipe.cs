@@ -20,6 +20,7 @@ public class GasPipe : MonoBehaviour
     {
         if (collision.tag == "Sparky")
         {
+            SoundMangerScript.PlaySound("gasPipe");
             collision.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector3(0, 15, 0);
         }
     }
