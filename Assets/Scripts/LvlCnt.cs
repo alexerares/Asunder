@@ -8,6 +8,7 @@ public class LvlCnt : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //PlayerPrefs.SetInt("levelAt", 1);
         int levelAt = PlayerPrefs.GetInt("levelAt", 1);
 
         for (int i = 0; i < lvlButtons.Length; i++)

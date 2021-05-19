@@ -10,6 +10,7 @@ public class Platform : MonoBehaviour
     public bool button = false;
 
     Vector3 nextpos;
+    public Animator animator;
     
     // Start is called before the first frame update
     void Start()
@@ -31,14 +32,18 @@ public class Platform : MonoBehaviour
         }
 
         //if(button && first)
-            //transform.position = Vector3.MoveTowards(transform.position, nextpos, speed * Time.deltaTime);
+        //transform.position = Vector3.MoveTowards(transform.position, nextpos, speed * Time.deltaTime);
 
         if (button)
+        {
+            animator.SetBool("Open", true);
             transform.position = Vector3.MoveTowards(transform.position, nextpos, speed * Time.deltaTime);
+        }
+        if (!button)
+        {
+            animator.SetBool("Open", false);
+        }
     }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawLine(pos1.position, pos2.position);
-    }
+
 }
