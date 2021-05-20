@@ -168,4 +168,4 @@ MonoBehaviour:
   animator: {fileID: 6048884582457417237}
   has_velocity: 0
   reset: 0
-  shady: {fileID: 0}
+  shady: {fileID: 5853018198378525973, guid: 7056b87e0c3b51a43b5996c0267d1372, type: 3}

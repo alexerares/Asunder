@@ -391,31 +391,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 58234425}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &60368921 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2314728700882982673, guid: ef73de1114ec04843a09834f317ac5db,
-    type: 3}
-  m_PrefabInstance: {fileID: 1829094858}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &60368926
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 60368921}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 089c55dd1de7e5a41908c840e73159cd, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &73361007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -652,12 +627,12 @@ PrefabInstance:
     - target: {fileID: 5853018198378525974, guid: 7056b87e0c3b51a43b5996c0267d1372,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.9
+      value: -3.96
       objectReference: {fileID: 0}
     - target: {fileID: 5853018198378525974, guid: 7056b87e0c3b51a43b5996c0267d1372,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.75
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 5853018198378525974, guid: 7056b87e0c3b51a43b5996c0267d1372,
         type: 3}
@@ -5423,6 +5398,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Activated_platform_button
       objectReference: {fileID: 0}
+    - target: {fileID: 4986824303104639550, guid: ed9e7576bba5148418a93ff3b50143cf,
+        type: 3}
+      propertyPath: matching_platform
+      value: 
+      objectReference: {fileID: 1900396944}
     - target: {fileID: 4986824303157811814, guid: ed9e7576bba5148418a93ff3b50143cf,
         type: 3}
       propertyPath: m_Pivot.x
@@ -8111,7 +8091,7 @@ PrefabInstance:
         type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 60368926}
+      objectReference: {fileID: 0}
     - target: {fileID: 2314728700882982672, guid: ef73de1114ec04843a09834f317ac5db,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8344,6 +8324,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e1cfdf6153da724a8b841279dddcaaa, type: 3}
+--- !u!114 &1900396944 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4986824301918590947, guid: ed9e7576bba5148418a93ff3b50143cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 1351004686}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5308afa87ec23ed4db69a482145438fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1914505709
 GameObject:
   m_ObjectHideFlags: 0

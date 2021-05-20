@@ -11,10 +11,10 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 770705227443185218}
-    m_Position: {x: 200, y: 0, z: 0}
+    m_Position: {x: 310, y: 20, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1569539071366184858}
-    m_Position: {x: 320, y: 160, z: 0}
+    m_Position: {x: 310, y: 160, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -32,7 +32,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlatformPinkOn
+  m_Name: PlatformWhiteOn
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -46,7 +46,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 190e31766039d5648a06f037fe838b95, type: 2}
+  m_Motion: {fileID: 7400000, guid: b92f2e3d3f069264bad3bb4af3f2f66f, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -91,7 +91,7 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -112,7 +112,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlatformPinkOff
+  m_Name: PlatformWhiteOff
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -126,7 +126,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 4b2b4c1c6a23e894e9dab1e3a34ccdf2, type: 2}
+  m_Motion: {fileID: 7400000, guid: 25779ff0a022e5f44a413d2c00bd3aa7, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
