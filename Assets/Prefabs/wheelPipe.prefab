@@ -173,7 +173,6 @@ GameObject:
   - component: {fileID: 3126114593427842022}
   - component: {fileID: 1761294645397046757}
   - component: {fileID: 7941536015814635211}
-  - component: {fileID: 6955685650459074439}
   - component: {fileID: 7556981789434984421}
   m_Layer: 0
   m_Name: wheelPipe
@@ -253,22 +252,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7414594, y: 1.9636519}
   m_EdgeRadius: 0
---- !u!58 &6955685650459074439
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4329079229370686154}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.01}
-  serializedVersion: 2
-  m_Radius: 0.65
 --- !u!50 &7556981789434984421
 Rigidbody2D:
   serializedVersion: 4
@@ -300,6 +283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6378746701773792753}
   - component: {fileID: 6747715924907926013}
+  - component: {fileID: 7575450833590543621}
   m_Layer: 0
   m_Name: small wheel front
   m_TagString: Untagged
@@ -315,7 +299,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5731600144816166855}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0.629, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3126114593427842022}
@@ -371,6 +355,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &7575450833590543621
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5731600144816166855}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.01}
+  serializedVersion: 2
+  m_Radius: 0.85
 --- !u!1 &6164314110002670519
 GameObject:
   m_ObjectHideFlags: 0

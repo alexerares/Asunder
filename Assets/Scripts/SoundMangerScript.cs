@@ -16,6 +16,7 @@ public class SoundMangerScript : MonoBehaviour
         buttonPress = Resources.Load<AudioClip>("ButtonPress");
         teleport = Resources.Load<AudioClip>("Teleport");
         audioSrc = GetComponent<AudioSource>();
+        audioSrc.volume = 0.3f;
     }
 
     // Update is called once per frame

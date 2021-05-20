@@ -3228,12 +3228,12 @@ PrefabInstance:
     - target: {fileID: 5853018198378525974, guid: 7056b87e0c3b51a43b5996c0267d1372,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.24
+      value: 6.18
       objectReference: {fileID: 0}
     - target: {fileID: 5853018198378525974, guid: 7056b87e0c3b51a43b5996c0267d1372,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.7
+      value: -9.61
       objectReference: {fileID: 0}
     - target: {fileID: 5853018198378525974, guid: 7056b87e0c3b51a43b5996c0267d1372,
         type: 3}
@@ -4401,6 +4401,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wheelPipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378746701773792753, guid: 29108a05c0392134c938357d1b35c3a0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.056
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378746701773792753, guid: 29108a05c0392134c938357d1b35c3a0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.54
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29108a05c0392134c938357d1b35c3a0, type: 3}
