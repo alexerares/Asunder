@@ -5,8 +5,7 @@ using UnityEngine;
 public class spring : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float moveSpeed = 10f;
-    public float jumpSpeed = 1000;
+    public float moveSpeed = 20f;
     public Animator animator;
     public bool has_velocity = false;
     public bool reset = false;
@@ -22,7 +21,7 @@ public class spring : MonoBehaviour
     {
         if (has_velocity)
         {
-            shady.GetComponent<Rigidbody2D>().velocity = new Vector3(0, 20, 0);
+            shady.GetComponent<Rigidbody2D>().velocity = new Vector3(0, moveSpeed, 0);
         }
         if (reset)
         {

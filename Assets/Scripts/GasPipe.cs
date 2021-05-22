@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GasPipe : MonoBehaviour
 {
+    public float moveSpeed = 15f;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,7 @@ public class GasPipe : MonoBehaviour
         if (collision.tag == "Sparky")
         {
             SoundMangerScript.PlaySound("gasPipe");
-            collision.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector3(0, 15, 0);
+            collision.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector3(0, moveSpeed, 0);
         }
     }
 }
