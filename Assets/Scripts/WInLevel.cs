@@ -7,6 +7,7 @@ public class WInLevel : MonoBehaviour
     // Start is called before the first frame update
     public bool unlock1 = false;
     public bool unlock2 = false;
+    public bool unlock3 = false;
     public int nextSceneLoad;
     void Start()
     {
