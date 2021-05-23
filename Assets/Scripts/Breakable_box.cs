@@ -26,4 +26,20 @@ public class Breakable_box : MonoBehaviour
             animator.SetBool("isOpen", isOpen);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Platform")
+        {
+            transform.SetParent(collision.collider.transform);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Platform")
+        {
+            transform.SetParent(null);
+        }
+    }
 }
