@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BLuePLatformActive
+  m_Name: GasPipeGreenActivated
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,15 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 01a73201c6cd62847b7803df5e9e31d3, type: 3}
+      value: {fileID: 21300000, guid: fc03e4c598130cd4f86e5a078888d520, type: 3}
+    - time: 0.25
+      value: {fileID: 21300000, guid: 875a52ea29f176c469be73156cbbb5ec, type: 3}
+    - time: 0.5
+      value: {fileID: 21300000, guid: 0ae66531a9f9bfd48bd5dd53ec99b4f9, type: 3}
+    - time: 0.75
+      value: {fileID: 21300000, guid: 875a52ea29f176c469be73156cbbb5ec, type: 3}
+    - time: 1
+      value: {fileID: 21300000, guid: fc03e4c598130cd4f86e5a078888d520, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -40,13 +48,17 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 01a73201c6cd62847b7803df5e9e31d3, type: 3}
+    - {fileID: 21300000, guid: fc03e4c598130cd4f86e5a078888d520, type: 3}
+    - {fileID: 21300000, guid: 875a52ea29f176c469be73156cbbb5ec, type: 3}
+    - {fileID: 21300000, guid: 0ae66531a9f9bfd48bd5dd53ec99b4f9, type: 3}
+    - {fileID: 21300000, guid: 875a52ea29f176c469be73156cbbb5ec, type: 3}
+    - {fileID: 21300000, guid: fc03e4c598130cd4f86e5a078888d520, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.016666668
+    m_StopTime: 1.0166667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
