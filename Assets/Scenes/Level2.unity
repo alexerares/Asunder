@@ -5527,12 +5527,12 @@ PrefabInstance:
     - target: {fileID: 3727731008505520569, guid: 6a7c812ba62243644b5fe9975b7f86a7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.21
+      value: -17
       objectReference: {fileID: 0}
     - target: {fileID: 3727731008505520569, guid: 6a7c812ba62243644b5fe9975b7f86a7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.44
+      value: -9.5
       objectReference: {fileID: 0}
     - target: {fileID: 3727731008505520569, guid: 6a7c812ba62243644b5fe9975b7f86a7,
         type: 3}
@@ -5792,7 +5792,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 9.278582, y: -1.0315948}
+  m_Offset: {x: -6.0669003, y: -1.0315948}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5803,7 +5803,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 106.333755, y: 10.996938}
+  m_Size: {x: 86.985, y: 10.996938}
   m_EdgeRadius: 0
 --- !u!4 &1063583615 stripped
 Transform:
@@ -6591,7 +6591,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 3.6331844, y: -0.32445526}
+  m_Offset: {x: -12.045481, y: -0.32445526}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6602,7 +6602,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 36.931, y: 78.59557}
+  m_Size: {x: 43.60307, y: 78.59557}
   m_EdgeRadius: 0
 --- !u!4 &1207294234 stripped
 Transform:
@@ -7805,12 +7805,12 @@ PrefabInstance:
     - target: {fileID: 5853018198378525974, guid: 7056b87e0c3b51a43b5996c0267d1372,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.39
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 5853018198378525974, guid: 7056b87e0c3b51a43b5996c0267d1372,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.11
+      value: -9.5
       objectReference: {fileID: 0}
     - target: {fileID: 5853018198378525974, guid: 7056b87e0c3b51a43b5996c0267d1372,
         type: 3}
