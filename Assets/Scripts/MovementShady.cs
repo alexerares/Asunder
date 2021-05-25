@@ -27,20 +27,20 @@ public class MovementShady : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
+        if (Input.GetKeyUp(KeyCode.J) || Input.GetKeyUp(KeyCode.L))
         {
             translate2 = 0;
             
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.J))
         {
             transform.right = new Vector3(-1, 0, 0);
             facingRight2 = false;
             translate2 = -1;
         }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.L))
         {
             transform.right = new Vector3(1, 0, 0);
             facingRight2 = true;
@@ -57,7 +57,7 @@ public class MovementShady : MonoBehaviour
             if (canMove)
                 transform.Translate(Vector3.right * translate2 * moveSpeed2 * Time.deltaTime);
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow) && Mathf.Abs(_rigidbody2.velocity.y) < 0.001f)
+        if (Input.GetKeyDown(KeyCode.I) && Mathf.Abs(_rigidbody2.velocity.y) < 0.001f)
         {
             _rigidbody2.AddForce(new Vector2(0, JumpForce2), ForceMode2D.Impulse);
             SoundMangerScript.PlaySound("jumpShady");
