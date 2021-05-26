@@ -25,7 +25,7 @@ public class WInLevel : MonoBehaviour
 
         if (transform.GetChild(0).GetComponent<Elevator_exit>().nextlevel)
         {
-            if (SceneManager.GetActiveScene().buildIndex == 5) 
+            if (SceneManager.GetActiveScene().buildIndex == 7) 
             {
                 Debug.Log("You Completed ALL Levels");
 
