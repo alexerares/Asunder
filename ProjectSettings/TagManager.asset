@@ -16,6 +16,7 @@ TagManager:
   - Floor
   - WinShady
   - WinSparky
+  - MetalBox
   layers:
   - Default
   - TransparentFX

@@ -88,6 +88,16 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.SetParent(collision.collider.transform);
         }
+
+        if (collision.collider.tag == "MetalBox")
+        {
+            transform.SetParent(collision.collider.transform);
+        }
+
+        if (collision.collider.tag == "BoxShady")
+        {
+            transform.SetParent(collision.collider.transform);
+        }
     }
 
     void OnCollisionExit2D(Collision2D collision)
@@ -101,7 +111,15 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.SetParent(null);
         }
+        if (collision.collider.tag == "MetalBox")
+        {
+            transform.SetParent(null);
+        }
 
+        if (collision.collider.tag == "BoxShady")
+        {
+            transform.SetParent(null);
+        }
     }
 
 
