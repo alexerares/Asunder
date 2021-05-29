@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class TriggerPipeOrizontal : MonoBehaviour
 {
+    public bool direction = false;
+    int velocity;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        velocity = direction ? 10 : -10;
     }
 
     // Update is called once per frame
@@ -20,7 +23,7 @@ public class TriggerPipeOrizontal : MonoBehaviour
     {
         if (collision.tag == "Sparky")
         {
-            collision.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector3(-10, 0, 0);
+            collision.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector3(velocity, 0, 0);
         }
     }
 }
